@@ -1,4 +1,4 @@
-import UserProfile from '.Components/UserProfile/index'
+import UserProfile from './Components/UserProfile/index'
 
 const userdetails = {
   imageurl: 'https://assets.ccbp.in/frontend/react-js/esther-howard-img.png',
@@ -6,5 +6,5 @@ const userdetails = {
   role: 'Software Developer',
 }
 
-const App = () => <UserProfile />
+const App = () => <UserProfile userdetails={userdetails} />
 export default App

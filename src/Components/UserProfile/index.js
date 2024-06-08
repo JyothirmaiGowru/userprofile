@@ -1,7 +1,10 @@
-const UserProfile = () => (
-  <div>
-    <img src="https://assets.ccbp.in/frontend/react-js/esther-howard-img.png" />
-  </div>
-)
+const UserProfile = props => {
+  const {userdetails} = props
+  const {imageurl} = userdetails
+
+  return (
+    <div><img src={imageurl} /> </div>
+  )
+}
 
 export default UserProfile
